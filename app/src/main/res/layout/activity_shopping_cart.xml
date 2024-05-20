@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6C4C4"
+    android:backgroundTint="#000000"
+    tools:context=".ShoppingCart">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView6"
+        android:layout_width="414dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="700dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/navhome1"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/home3"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/images__1_" />
+
+            <ImageButton
+                android:id="@+id/navprofile1"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/profile3"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/pngtree_avatar_icon_profile_icon_member_login_vector_isolated_png_image_1978396" />
+
+            <ImageButton
+                android:id="@+id/navcart1"
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/cart7"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/shopping_cart_logo_icon_shopping_cart" />
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/total"
+        android:textColor="#FFFDFD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkout"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="213dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="36dp"
+        android:autofillHints="total"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/rs_11000_00"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/checkout"
+        android:layout_width="266dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="152dp"
+        android:text="@string/checkout"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/shopping_cart1"
+        android:textColor="#FFFCFC"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="378dp"
+        android:layout_height="356dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/blouse111"
+                app:srcCompat="@drawable/dd4cba629cc9d87f0f3d119ded034a54" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/plus"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/minus"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete4" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rs_2500_00"
+            android:textColor="#F4F1F1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/skirt4"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/_2cb7b4fc312f053dd9fe8d9e82d48bf" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/plus3"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/minus3"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete5" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="112dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/rs_3000_00"
+            android:textColor="#F6F1F1" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Home">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView6"
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="660dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/navhome1"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/navhome1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/images__1_" />
+
+            <ImageButton
+                android:id="@+id/navprofile1"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/navprofile1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/pngtree_avatar_icon_profile_icon_member_login_vector_isolated_png_image_1978396" />
+
+            <ImageButton
+                android:id="@+id/navcart1"
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/navcart1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/shopping_cart_logo_icon_shopping_cart" />
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <TextView
+        android:id="@+id/home1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="71dp"
+        android:text="@string/home"
+        android:textColor="#F3F0F0"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="144dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="21dp"
+        android:contentDescription="@string/skirts"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/blo1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:srcCompat="@drawable/_21c77bb2b3b7bdb8238a8da00b1989a"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="214dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="@string/blouse1"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView6"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blo1"
+        app:srcCompat="@drawable/_06d9b6e2ae4ed84c07355cb89e1995d"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="171dp"
+        android:layout_height="245dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="18dp"
+        android:contentDescription="@string/skirt"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/_6a00bb3bb1e871851d9c7f9a1a4ccfd"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="390dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#F3E4E4"
+            android:text="@string/skirt1"
+            android:textColor="#070606" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#919191"
+            android:text="@string/frock111"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#BEC1BE"
+            android:text="@string/pants"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#F8EEEE"
+            android:text="@string/blouse2"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="120dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/profile11"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/michael_dam_mez3pofgs_k_unsplash" />
+
+    <ImageButton
+        android:id="@+id/blo1"
+        android:layout_width="172dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="42dp"
+        android:contentDescription="@string/blouse11"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:srcCompat="@drawable/dd4cba629cc9d87f0f3d119ded034a54" />
+</androidx.constraintlayout.widget.ConstraintLayout>
